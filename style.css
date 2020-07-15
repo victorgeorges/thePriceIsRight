@@ -1,0 +1,156 @@
+nav{
+    background: linen;
+}
+.container{
+    
+    text-align: center;
+}
+
+.container h1{
+    font-family: 'Krona One', sans-serif;
+    transform: rotate(deg);
+}
+
+.botao{
+    font-size: 36px;
+    background: blue;
+    color: #FFFFFF;
+    border: none;
+    position: absolute;    
+    width: 430px;
+    height: 75px;
+    padding: 10px;
+    left: 775px;
+    top: 550px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+}
+
+.botao:hover{
+    background: darkmagenta;
+    transform: rotate(360deg) scale(1.1);    
+    border: none;
+}
+
+.botao:active{
+    background: green;
+    box-shadow:0 2px 0 #003f0094;
+    border: none;
+    
+}
+
+
+.premios-ganhou{
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+.premios-errou{
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+
+}
+
+
+.end{
+    height: 52px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 47%;
+    margin-bottom: 45px;
+    position:relative;
+    color: #FFFFFF;
+    background: #B0C4DE;    
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.534); */    
+}
+
+
+footer {
+	text-align: center;
+	background: url("./img/bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+.regras {
+    text-align: center;
+    display: inline;
+    margin: 0 0 0 185px;
+    font-size: 26px;
+    color: blue;
+}
+
+.botao-comecar{
+    height: 40px;
+    width: 1200px;
+    background: #00CD00;    
+    border-radius: 10px;
+    color: white;
+    border: none;
+    box-shadow:0 2px 0 #003f0094;    
+}
+
+.botao-comecar:active{
+    position:relative;
+    top:5px;
+    box-shadow:none;
+}
+
+.input-valor{
+    width: 360px;  
+    height: 40px;  
+    left: 150px;
+    margin: 30px 0 20px 450px;
+}
+
+.verificar{
+    height: 52px;
+    border-radius: 5px;
+    padding: auto;
+    position:relative;
+    color: #FFFFFF;
+    background: darkmagenta;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);    
+}
+.tentar{
+    height: 52px;
+    border-radius: 5px;
+    margin-left: 42%;
+    margin-top: 5%;    
+    color: #FFFFFF;
+    background-color: #B0C4DE;
+
+}
+.verificar:active{
+    position:relative;
+    top:5px;
+    box-shadow:none;
+    
+}
+.estatist{
+    margin-top: 200px;
+    margin-bottom: 30px;
+    height: 52px;
+    border-radius: 5px;
+    padding: auto;
+    position:relative;
+    color: #FFFFFF;
+    background-color:darkmagenta;
+}
+.foto_premios{
+    width: 900px;
+    height: 700px;
+}
+
+
+.invisivel{
+    display: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="./img/Tpir_40_logo.png" alt="logoMarca" class="img-inicial">
+    </nav>
+    <div class="container">
+    <h1 class="titulo">Bem vindo ao The Price Is Right !!</h1>
+        <img src="./img/fundo.jpg" alt="" class="img-fundo">
+        <button type="button" class="botao" id="button-bora-jogar">Bora jogar</button>
+        <!-- <p>Nesse Jogo vamos mostrar alguns produtos e você tera uma chance para acertar o valor mais proximo</p> -->
+    </div>
+
+
+    <div class="invisivel">
+        <div class="regras">
+            <h2 class="paragrafo-regras"> ->Regras<- </h2>
+            <p> Aparecerá na tela o nome do produto e um cronômetro. <br> Após cada tentativa o cronômetro irá rodar mais rápido, acertando ou errando. <br>  Você terá 5 minutos para dar seus palpites, caso contrário, aperte o botão FIM !
+            <br><br> BOA SORTE </p>
+            <div class="container">
+                <img class="foto_premios" src="./img/premios.png" alt="">>
+            </div>
+            <h3><button type="submit" class="botao-comecar" onclick="aparecerProduto()">Começar</button></h3>
+
+
+
+            <p class="nome-produto"></p>
+            <div id="time"></div>
+
+            <input type="number" class="input-valor" placeholder="R$" required>
+            <button class="verificar" onclick="verificadorPreco()">Verificar</button><button class="tentar bg-primary" onclick="tentar_novamente()">Próximo produto</button>
+            <div class="container">
+                    <p class="premios" id="premios"></p>
+            </div>
+            
+            <button class="end bg-danger" onclick="fim()">Fim</button>            
+        </div>
+   
+        
+        <div class="container">
+            <!-- <button class="estatist" onclick="estatistica()" >  Mostrar estatística  </button> -->
+            <div id="fim"></div>
+        </div>
+</div>
+    <footer>
+        <p class="copyright">&copy; Copyright <br> Marcelo Walther / Victor Georges  <br> 2020  </p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js" > </script> 
+    <script src="./index.js"></script>
+    <script src="./animation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>
