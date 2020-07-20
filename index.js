@@ -70,7 +70,7 @@ function verificadorPreco(){
     let nomesProdutos = $(".nome-produto").textContent;    
     /* let resultadoNatela = $("#premios"); */
 
-    if(premiosDoDia[nomesProdutos] == inputValor  ||   premiosDoDia[nomesProdutos] <= inputValor >= inputValor*0.9 ) {
+    if(premiosDoDia[nomesProdutos] == inputValor  ||   premiosDoDia[nomesProdutos] <= inputValor >= (premiosDoDia[nomesProdutos].value)*0.9 ) {
         
         resultadoNatela.classList.add("premios-ganhou")
         gsap.to(".premios", {duration: 2, x: 100, ease: "bounce"});
