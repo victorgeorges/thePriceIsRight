@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
@@ -19,8 +19,6 @@
         <button type="button" class="botao" id="button-bora-jogar">Bora jogar</button>
         <!-- <p>Nesse Jogo vamos mostrar alguns produtos e você tera uma chance para acertar o valor mais proximo</p> -->
     </div>
-
-
     <div class="invisivel">
         <div class="regras">
             <h2 class="paragrafo-regras"> ->Regras<- </h2>
@@ -31,22 +29,17 @@
             </div>
             <h3><button type="submit" class="botao-comecar" onclick="aparecerProduto()">Começar</button></h3>
 
-
-
             <p class="nome-produto"></p>
             <div id="time"></div>
-
             <input type="number" class="input-valor" placeholder="R$" required>
             <button class="verificar" onclick="verificadorPreco()">Verificar</button><button class="tentar bg-primary" onclick="tentar_novamente()">Próximo produto</button>
             <div class="container">
                     <p class="premios" id="premios"></p>
             </div>
-            
             <button class="end bg-danger" onclick="fim()">Fim</button>            
         </div>
    
-        
-        <div class="container">
+                <div class="container">
             <!-- <button class="estatist" onclick="estatistica()" >  Mostrar estatística  </button> -->
             <div id="fim"></div>
         </div>
@@ -54,17 +47,6 @@
     <footer>
         <p class="copyright">&copy; Copyright <br> Marcelo Walther / Victor Georges  <br> 2020  </p>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
 
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js" > </script> 
     <script src="./js/index.js"></script>
